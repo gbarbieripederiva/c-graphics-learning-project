@@ -1,5 +1,6 @@
 #include <iostream>
 #include <GLFW/glfw3.h>
+#include "../include/glad/glad/glad.h"
 
 int main(int argc, char const *argv[])
 {

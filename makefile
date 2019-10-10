@@ -1,10 +1,11 @@
-FILES=main.cpp
+FILES=src/main.cpp
 COMPILER=g++
+INCLUDES=./include/
 FLAGS=-lglfw -lGL -lX11 -lpthread -lXrandr -lXi -ldl
 OUTPUT_FILENAME=main.bin
 
 all: $(FILES)
-	$(COMPILER) $(FLAGS) $(FILES) -o $(OUTPUT_FILENAME)
+	$(COMPILER) -I $(INCLUDES) $(FLAGS) $(FILES) -o $(OUTPUT_FILENAME)
 
 
 .PHONY clean:
