@@ -1,0 +1,11 @@
+FILES=main.cpp
+COMPILER=g++
+FLAGS=
+OUTPUT_FILENAME=main.bin
+
+all: $(FILES)
+	$(COMPILER) $(FILES) $(FLAGS) -o $(OUTPUT_FILENAME)
+
+
+.PHONY clean:
+	rm $(OUTPUT_FILENAME)
