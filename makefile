@@ -1,10 +1,10 @@
 FILES=main.cpp
 COMPILER=g++
-FLAGS=
+FLAGS=-lglfw -lGL -lX11 -lpthread -lXrandr -lXi -ldl
 OUTPUT_FILENAME=main.bin
 
 all: $(FILES)
-	$(COMPILER) $(FILES) $(FLAGS) -o $(OUTPUT_FILENAME)
+	$(COMPILER) $(FLAGS) $(FILES) -o $(OUTPUT_FILENAME)
 
 
 .PHONY clean:
